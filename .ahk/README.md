@@ -23,8 +23,8 @@ These apps are the one curently mapped.
 
 **Code Editor**: Jetbrains IDEs.The hotkey will switch to the last active one or open the toolbox.
 
-** Web Browser**: Microsoft Edge.
+**Web Browser**: Microsoft Edge.
 
 **Terminal**: Windows Terminal.
 
-** Communication App**: Teams.
+**Communication App**: Teams.
