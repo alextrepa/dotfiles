@@ -1,0 +1,45 @@
+# docker
+alias dc='docker compose'
+alias dup='docker compose up -d'
+alias dex='docker compose exec'
+alias dps='docker compose ps'
+deb () { docker compose exec $1 bash; }
+alias dls='docker container list'
+alias dkl='docker container stop $(docker container list -q)'
+alias ddbg='docker debug'
+
+# Windows binaries
+
+alias clip='clip.exe'
+alias explorer='explorer.exe'
+
+#Function
+mine(){
+    sudo chown -R $(id -u):$(id -g) $1
+}
+
+# Search in a command manual
+search_man() {
+    man $1 | grep -- $2
+}
+
+# Neovim
+alias vim='nvim'
+
+# Git
+alias gcl='git clone'
+alias gph='git push'
+alias gpl='git pull'
+alias gcm='git commit'
+alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
+alias glg2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
+alias gck='git checkout'
+alias gad='git add'
+alias gal='git add .'
+
+# ssh agent
+alias sa='eval $(ssh-agent)'
+
+
+# gnu replacements
+alias cat='batcat'
